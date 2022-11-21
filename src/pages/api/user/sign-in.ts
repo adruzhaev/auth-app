@@ -20,7 +20,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
 async function loginUser(req: NextApiRequest, res: NextApiResponse) {
     const { body } = req;
-    const token = await signJWT(body.email, 'secret');
+    const token = await signJWT(body.email, process.env.JWT_TOKEN_SECRET as Secret);
 
     const user = await prisma.user.findUnique({
         where: {

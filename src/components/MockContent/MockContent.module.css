@@ -1,0 +1,84 @@
+.mock {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 25px;
+    margin-bottom: 72px;
+}
+
+.content__circle {
+    grid-column: 1;
+    grid-row: 1 / 3;
+    width: 73px;
+    height: 73px;
+    border-radius: 100%;
+    background-color: #F1F3FF;
+}
+
+.line-top,
+.line-bottom {
+    grid-column: 2;
+    position: relative; 
+}
+
+.line-top {
+    height: 31px;
+}
+
+.line-bottom {
+    height: 29px;
+}
+
+.line-top::after,
+.line-bottom::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 31px;
+    background-color: #F1F3FF;
+    border-radius: 9px;
+}
+
+.line-top::after {
+    width: 60%;
+}
+
+.line-bottom::after {
+    width: 40%;
+}
+
+.line-top::before,
+.line-bottom::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    height: 31px;
+    background-color: #F1F3FF;
+    border-radius: 9px;
+}
+
+.line-top::before {
+    width: 20%;
+}
+
+.line-bottom::before {
+    width: 30%;
+}
+
+@media only screen and (max-device-width: 768px) {
+    .content__circle {
+        width: 48px;
+        height: 48px;
+    }
+
+    .line-top, .line-bottom {
+        height: 20px;
+    }
+
+    .line-top::before,
+    .line-bottom::before, .line-top::after,
+    .line-bottom::after {
+        height: 20px;
+    }
+}

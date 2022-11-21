@@ -1,0 +1,15 @@
+.container {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    height: 100%;
+}
+
+.content {
+    padding: 84px 100px;
+}
+
+@media only screen and (max-device-width: 768px) {
+    .content {
+        padding: 32px 28px;
+    }
+}

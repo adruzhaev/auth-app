@@ -1,0 +1,90 @@
+.layout {
+    position: relative;
+    height: 100%;
+}
+
+.layout::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1200px;
+    height: 100%;
+    background-image:
+        url('/images/cone.png'), url('/images/one-plate.png'),
+        url('/images/multiple-forms.png'), url('/images/silver-plates.png'),
+        url('/images/arrow.png');
+    background-position:
+        left 50px top 130px, left 30px bottom 180px,
+        left 70px bottom -50px, right 110px top 300px,
+        right 30px bottom 160px;
+    background-repeat: no-repeat;
+}
+
+.sign-in {
+    background-color: #7A73FE;   
+}
+
+.sign-up {
+    background-color: #FF9C6A;
+}
+
+.ex {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    display: grid;
+    row-gap: 32px;
+    width: 760px;
+    height: 594px;
+    padding: 54px 170px 92px 170px;
+    border-radius: 24px;
+    z-index: 2;
+}
+
+.cone-image {
+    position: absolute;
+    top: -30px;
+    left: -170px;
+}
+
+.one-plate {
+    position: absolute;
+    bottom: 90px;
+    left: -200px;
+}
+
+.multiple-forms {
+    position: absolute;
+    bottom: -150px;
+    left: -160px;
+}
+
+.silver-plates {
+    position: absolute;
+    right: -100px;
+    top: 159px;
+}
+
+.arrow {
+    position: absolute;
+    right: -210px;
+    bottom: -40px;
+}
+
+@media only screen and (max-device-width: 1200px) {
+    .layout::after {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-device-width: 768px) {
+    .layout::after {
+        width: 100%;
+        background-image: url('/images/cone.png'), url('/images/multiple-forms.png');
+        background-position: left 0 top 12%, right 30px bottom 0;
+    }
+}

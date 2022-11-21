@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none"><mask
+    id="b"
+    width="27"
+    height="28"
+    x="4"
+    y="2"
+    maskUnits="userSpaceOnUse"
+    style="mask-type:alpha"
+  ><path
+      fill="url(#a)"
+      d="M12 25.333A2.667 2.667 0 0 1 14.666 28v1.333h-8A2.667 2.667 0 0 1 4 26.667V5.333a2.667 2.667 0 0 1 2.667-2.666H12a2.667 2.667 0 0 1 2.666 2.666v1.334H8v18.666h4Z"
+    /><path
+      fill="#000"
+      d="M21.333 7.333V12H12v2.667A5.333 5.333 0 0 0 17.333 20h4v4.667L30.667 16l-9.334-8.667Z"
+    /></mask><g mask="url(#b)"><path
+      fill="#7A73FE"
+      d="M0 0h32v32H0V0Z"
+    /></g><defs><linearGradient
+      id="a"
+      x1="8.666"
+      x2="8.667"
+      y1="4.148"
+      y2="27.852"
+      gradientUnits="userSpaceOnUse"
+    ><stop /><stop
+        offset="1"
+        stop-opacity=".75"
+      /></linearGradient></defs></svg>
